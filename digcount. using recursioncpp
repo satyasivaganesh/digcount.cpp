@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int count(int n,int c){
+    if(n==0)return c;
+    else{
+        n=n/10;
+        return count(n,c+1);
+    
+        
+    }
+}
+
+
+int main() {
+    int n,c=0;
+    cin>>n;
+    cout<<count(n,c);
+
+	return 0;
